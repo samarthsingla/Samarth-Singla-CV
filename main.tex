@@ -1,0 +1,168 @@
+\documentclass{article}
+\usepackage[a4paper,bottom = 0.4in,left = 0.75in,right = 0.75in,top = 0.6in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage[colorlinks=false]{hyperref}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{booktabs}
+
+\newcommand{\xfilll}[2][1ex]{
+\dimen0=#2\advance\dimen0 by #1
+\leaders\hrule height \dimen0 depth -#1\hfill}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+\renewcommand\labelitemi{\raisebox{0.4ex}{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{$\cdot$}
+\pagenumbering{gobble}
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Samarth Singla} \\ \vspace{1pt}
+    \textbf{\large Curriculum Vitae}\\ \vspace{2pt}
+    \small 
+ \href{mailto:mt6210942@iitd.ac.in}{\underline{mt6210942@iitd.ac.in}}
+$|$ 
+\href{mailto:samarthsingla03@gmail.com}{\underline{samarthsingla03@gmail.com}}
+\end{center}
+
+\vspace{-12pt}
+\section*{{\LARGE Education}\xfilll[0pt]{0.5pt}}
+\vspace{-20pt}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|l}
+\cline{1-4}
+\textbf{Degree/Exam}            & \textbf{CGPA/Percentage} & \textbf{INSTITUTION}    & \textbf{YEAR}       &  \\ \cline{1-4}
+{\small B.Tech and M.Tech, Mathematics and Computing} & 8.87/10  & IIT Delhi & 2021-2026(expected) &  \\ \cline{1-4}
+Class XII, CBSE Board & 99.0\% & DPS, Faridabad & 2021 &  \\ \cline{1-4}
+Class X, CBSE Board             & 98.2\%         & DPS, Faridabad    & 2019                &  \\ \cline{1-4}
+\end{tabular}
+\end{table}
+
+\section*{{\LARGE Scholastic Achievements}\xfilll[0pt]{0.5pt}}
+\vspace{-5pt}
+
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item  \textbf{IIT Delhi Semester Merit Award (Top 7\%)} for securing semester GPA 9.62/10 \hfill{\sl \small (2022)}
+\item  Secured \textbf{All India Rank 340} in Joint Entrance Examination Advanced given by \textbf{1,50,000} candidates\hfill{\sl \small (2021)}
+\item Recipient of the {\bf KVPY SX} fellowship with \textbf{All India Rank 491} awarded by the Government of India \hfill{\sl \small (2021)}
+\item Secured \textbf{99.95} percentile in JEE Mains given by 1.2 million candidates\hfill{\sl
+\small(2021)}
+\item Qualified \textbf{Zonal Computing Olympiad} and \textbf{Zonal Informatics Olympiad} and appeared for Indian National Olympiad in Informatics \hfill{\sl
+\small(2019-20)}
+
+\end{itemize}
+
+\vspace{-16pt}
+\vspace{0pt}
+\section*{\LARGE Key Projects\xfilll[0pt]{0.5pt}}
+
+\vspace{-6pt}
+\vspace{\baselineskip}
+\vspace{-10pt}
+\vspace{2pt}
+
+\textbf {Pattern Searching in Text}
+\hfill{\sl \small Summer 2022}\\
+{\it Guide: Prof. Naveen Garg}\hfill{\it IIT Delhi}
+\vspace{-4pt}
+\begin{itemize}[itemsep = -0.75 mm]
+    \item Find all occurrences of a pattern of length m in a text of length n with probability of false positive at a particular index $ < \varepsilon$
+    \item Time complexity: $ O( (m+n)\log{\frac{m}{\varepsilon}} ) $
+    \\
+    Space Complexity: $ O( k + \log(n) + \log(\frac{m}{\varepsilon}) ) $
+    \item Add searching capability when pattern may contain 1 wildcard character
+\end{itemize}
+\vspace{\baselineskip}
+\vspace{-10pt}
+\textbf{Google Maps like Search Nearby Feature} \hfill{\sl \small Summer 2022}\\
+{\it Guide: Prof. Ashish Chiplunkar and Prof. Naveen Garg} \hfill{\sl \small IIT Delhi}
+\begin{itemize}[itemsep = -0.75 mm]
+    \item Given a database of $ n $ restaurants, pre-process the database to handle querying restaurants within a certain distance of the query restaurant.
+    \item Implemented the \textbf{2D Range Tree} Data Structure to handle above queries in $O(m + \log^{2}n)$ time where $m$ is the number of points returned, while ensuring the database builds in $O(n\log n) $ time
+\end{itemize}
+\vspace{\baselineskip}
+\vspace{-5pt}
+\textbf{Sudoku Solver} \hfill{\sl \small Winter 2021}\\
+{\it Guide: Prof. Sayan Ranu} \hfill{\sl \small IIT Delhi}
+\begin{itemize}[itemsep = -0.75 mm]
+    \item Recursively find the correct solution to a sudoku puzzle
+    \item Find the explicit solution using \textbf{Backtracking}
+    
+\end{itemize}
+\vspace{\baselineskip}
+\vspace{0pt}
+\textbf{Flappy Bird Automator using Genetic Algorithm in Python}\hfill{\sl \small 2019-20}\\
+{\it Independent Group Project}
+\begin{itemize}[itemsep = -0.75 mm]
+\item Implemented Game graphics and mechanics using the \href{https://www.pygame.org/wiki/about}{PyGame} library
+\item Handled sensory input data for the algorithm such as the distance from obstacle and ground, speed etc.
+\item Implemented the Genetic Algorithm which mimics processes in nature to automate the Flappy Bird game. A set of individuals constitute a {\it generation}. Based on their fitness scores, the top few are {\it selected} and the next generation is produced by creating small {\it mutations} in their {\it genes}
+\item The github repository can be found \href{https://github.com/samarthsingla/flappybird-genetic}{here}. It contains installation and running instructions to see the algorithm in action.
+
+\end{itemize}
+\vspace{-8pt}
+\section*{\LARGE Technical Skills\xfilll[0pt]{0.5pt}}
+\vspace{-8pt}
+\begin{itemize}
+    \item \textbf{Programming}: Python, C++, VHDL*, HTML, Javascript and jQuery, Django Framework, PHP
+    \item \textbf{Tools}: \LaTeX, PyGame, sliXMPP, Arduino
+    \item \textbf{Software}: AutoDesk Inventor, Sony Vegas Pro, Excel
+    \item \textbf{Competitive Programming}: 1296 (max. 1366) rated on \href{https://codeforces.com/profile/samarthfactorial}{Codeforces}
+\end{itemize}
+\vspace{-8pt}
+
+\section*{\LARGE Courses Undertaken\xfilll[0pt]{0.5pt}}
+\vspace{-4pt}
+
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item {\bf Mathematics : } 
+\begin{itemize}
+    \item Probability and Stochastic Processes, Calculus, Linear Algebra, Discrete Mathematical Structures (including Graph Theory, Set Theory and Combinatorics), Optimization Methods and Applications $^{*}$, Computing Laboratory (MATLAB) $^{*}$, Differential Equations $^{*}$
+\end{itemize}
+\item {\bf Computer Science: } 
+\begin{itemize}
+    \item Data Structures and Algorithms, Introduction to Computer Programming
+\end{itemize}
+\item {\bf Miscellaneous: }
+\begin{itemize}
+    \item Microeconomics, Fundamentals of Language Sciences $^{*}$
+\end{itemize}
+% \item {\bf Labs:} Physics, Chemistry, Mechanical Workshop, Engineering Drawing
+\end{itemize}
+{\it $^{*}$ To be completed by Summer 2023 }
+\vspace{-3pt}
+\section*{\LARGE Internship Experience\xfilll[0pt]{0.5pt}}
+\vspace{-2pt}
+\textbf{Technical Activity Head}{\small $|$ \textit{Rendezvous, IIT Delhi} \hfill{\sl \small \textit March 2022 - April 2022}}\\
+\vspace{-17pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Rendezvous is one of the largest college fests in North India
+    \item Worked as a frontend developer for the official website of Rendezvous responsible for handling bookings.
+\end{itemize}
+\vspace{-2pt}
+
+\vspace{-12pt}
+\section*{\LARGE Extracurriculars\xfilll[0pt]{0.5pt}}
+\vspace{-10pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+ \item Performed as Guitarist in Battle of Bands - InterHostel Band Competition at IIT Delhi
+ \item Performed as Cajonist in Convocation Dinner, Zanskar Hostel, IIT Delhi
+\item Mathematics Society, IITD Member
+\begin{itemize}
+    \item Represented Mathematics Society in the Department Orientation for the 2022 entry batch of freshers. 
+\end{itemize}
+\item Executive at Economics Club, IIT Delhi
+% \begin{itemize}
+%     \item Developing the official website
+%     \item Currently ideating 
+% \end{itemize}
+\item Executive at Algorithms and Coding Club, IIT Delhi
+ \end{itemize}
+\end{document}
